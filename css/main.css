@@ -391,6 +391,9 @@ footer{
 }
 /* adding Media Query */
 @media only screen and (max-width: 480px){
+    .container{
+        width: 90%;
+    }
     header nav{
         flex-direction: column;
         align-items: center;
@@ -446,7 +449,7 @@ footer{
         margin-bottom: 5rem;
     }
     .skills-items :nth-child(3) {
-        margin-bottom: -4rem;
+        margin-bottom: 0;
     }
     .skills .icons {
         margin-top: 0;
@@ -460,11 +463,21 @@ footer{
     }
     /* Starting Experience */
     .experience{
-        margin: 0;
+        margin: 5rem 0 0;
     }
     .experience-list {
         min-height: 100vh;
         height: 212vh;
+    }
+    /* Starting Contact */
+    .contact{
+        margin-top: 5rem;
+    }
+    .contact img {
+        width: 100%;
+    }
+    .contact button {
+        margin-left: 0
     }
 }
 /* JavaScript Classes for manipulating css */
