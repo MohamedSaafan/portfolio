@@ -26,3 +26,35 @@ toggleLinks.addEventListener('click', e => {
         navOpen = false;
     }
 })
+// adding the parallex effect to the site 
+let animatedElements = []
+animatedElements.push( document.querySelector('.about .description'));
+animatedElements.push(...document.querySelectorAll('.skills-items .skills-item'));
+animatedElements.push(document.querySelector('.skills .icons'));
+animatedElements.push(...document.querySelectorAll('.portfolio-item .image'));
+animatedElements.push(...document.querySelectorAll('.portfolio-item .descreption'));
+let footerButton = document.querySelector('.contact .contact-footer button')
+let footerImage = document.querySelector('.contact .contact-footer img')
+animatedElements.push(footerImage);
+animatedElements.push(footerButton);
+window.addEventListener('scroll',()=>{
+    
+    animatedElements.forEach((item)=>{ 
+        if(window.pageYOffset + document.documentElement.clientHeight >=item.offsetTop+item.clientHeight/4){
+                item.classList.add('grow');
+        }
+    })
+        
+});
+// animation for the experience list
+let animatedList = document.querySelector('.experience .experience-list');
+window.addEventListener('scroll',()=>{
+    
+        if(
+            window.pageYOffset + 
+            document.documentElement.clientHeight >=
+            animatedList.offsetTop+animatedList.clientHeight/4){
+            animatedList.classList.add('grow');
+        }
+        
+});

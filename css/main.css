@@ -130,6 +130,10 @@ nav ul li a{
 } */
 .description{
     max-width: 50%;
+    opacity: 0;
+    transition: all .5s ease-in;
+    transform: translateY(17rem);
+
 }
 .description h3 {
     color: #3F4B63;
@@ -197,6 +201,8 @@ nav ul li a{
     position: relative;
     margin-left: 1rem;
     height: 29rem;
+    transform: translateX(-8rem);
+    opacity: 0;
 }
 .skills-items .skills-item .skills__box-item{
     width: 7rem;
@@ -224,6 +230,7 @@ nav ul li a{
     text-align: center; 
     font-size: 4rem;   
     margin-bottom: 6rem;
+    opacity: 0;
 }
 .icons i{
     cursor: pointer;
@@ -268,6 +275,8 @@ nav ul li a{
     height: 10rem;
     border: 2px solid #75e6da;
     margin-top: 5rem;
+    opacity: 0;
+    transform: translateX(-2rem);
 }
 .portfolio .portfolio-item .image img{
     width: 100%;
@@ -275,6 +284,10 @@ nav ul li a{
 .portfolio-item h4 {
     color: #38445C;
     margin: 1.5rem 0 ;
+}
+.portfolio-item .descreption {
+    opacity: 0;
+    transform: translateX(14rem);
 }
 .portfolio-item h3{
     color: #C3CEDA;
@@ -309,6 +322,8 @@ nav ul li a{
     height: 100vh;
     padding-left: 3rem;
     width: 70%;
+    opacity: 0;
+    transform: translateY(2rem);
     
 }
 .experience-list li{
@@ -380,11 +395,15 @@ nav ul li a{
 }
 .contact img{
     border: 1px solid;
+    transform: translateY(9rem);
+    opacity: 0;
 }
 .contact button {
     margin: 4rem 0;
     display: block;
     margin-left: 5rem;
+    opacity: 0;
+    transform: translateY(-3rem);
 }
 footer{
     text-align: center
@@ -482,5 +501,16 @@ footer{
 }
 /* JavaScript Classes for manipulating css */
 
-
+@keyframes grow{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.grow{
+    
+    animation-name: grow;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
 
