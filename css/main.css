@@ -455,6 +455,9 @@ footer{
     .portfolio-item {
         grid-template-columns: 1fr;
     }
+    .portfolio .description{
+        margin: 3rem 0;
+    }
     /* Starting Experience */
     .experience{
         margin: 0;
