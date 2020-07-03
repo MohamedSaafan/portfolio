@@ -391,9 +391,6 @@ footer{
 }
 /* adding Media Query */
 @media only screen and (max-width: 480px){
-    .container{
-        overflow: hidden;
-    }
     header nav{
         flex-direction: column;
         align-items: center;
@@ -453,6 +450,18 @@ footer{
     }
     .skills .icons {
         margin-top: 0;
+    }
+    /* Starting Portfolio */
+    .portfolio-item {
+        grid-template-columns: 1fr;
+    }
+    /* Starting Experience */
+    .experience{
+        margin: 0;
+    }
+    .experience-list {
+        min-height: 100vh;
+        height: 212vh;
     }
 }
 /* JavaScript Classes for manipulating css */
