@@ -7,10 +7,12 @@ body{
     background-color: #071330;
     font-family: 'Open Sans', sans-serif;
     color: #75e6da;
+    overflow-x: hidden;
 }
 .container {
     width: 80%;
     margin: auto;
+    
 }
 header.main{
     height: 100vh;
@@ -549,6 +551,32 @@ footer{
     }
 
 }
+/* Starting Media Query For Desktop */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container{
+        width: 90%;
+    }
+
+    /* Starting navBar */
+    nav ul li a  {
+        font-size: 1rem ;
+    }
+    header h1 {
+        text-align: center;
+    }
+    /* Starting About */
+    .about{
+        min-height: 80vh;
+    }
+    .description ul {
+        margin: 0 2rem;
+    }
+    /* Starting experience */
+    .experience {
+        margin: 7rem 0;
+    }
+    
+  }
 /* JavaScript Classes for manipulating css */
 
 @keyframes grow{
