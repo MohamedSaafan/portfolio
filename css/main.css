@@ -499,6 +499,56 @@ footer{
         margin-left: 0
     }
 }
+/* Starting Tablet design */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    /* Starting nav bar */
+    .nav-links{
+        display: none;
+    }
+    .toggle-links{
+        display: flex;
+        top: 3rem;
+        right: 3rem;
+    }
+    header h1 {
+        text-align: center;
+    }
+    /* Starting About */
+    .about{
+        max-width: 88%;
+    }
+    .about .description {
+        max-width: 190%;
+    }
+    .about .description ul{
+        margin-left: 5rem;
+    }
+    /* Starting Skills */
+    .skills .skills-items{
+        grid-template-columns: 1fr;
+    }
+    .skills .skills-item{
+        margin-left: 0;
+        margin-bottom: 3rem;
+    }
+   .skills .skills-items .skills-item :nth-child(3) {
+        margin-bottom: -3rem;
+    }
+    /* Starting Portfolio */
+    .portfolio-item{
+        grid-template-columns: 1fr;
+    }
+    /* Starting experience */
+    .experience {
+        margin: 5rem 0;
+    }
+    .experience-list {
+        min-height: 100vh;
+        height: auto;
+        width: 90%;
+    }
+
+}
 /* JavaScript Classes for manipulating css */
 
 @keyframes grow{
